@@ -1,0 +1,13 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid whitesmoke;
+}
+.header__left{
+    display: flex;
+    align-items: center;
+}
+.header__left > img{
+    object-fit: contain;
+}
