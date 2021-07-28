@@ -1,0 +1,33 @@
+.sidebarOption{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius:20px;
+    color: #818181;
+    cursor: pointer;
+}
+.sidebarOption:hover,
+.sidebarOption:hover > h3,
+.sidebarOption:hover > p{
+    background-color: #fcecec;
+    color: crimson;
+    font-weight: 800 !important;
+}
+.sidebarOption > .MuiSvgIcon-root{
+    padding: 5px;
+}
+.sidebarOption > h3{
+    flex: 1;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.sidebarOption > p{
+ display: none;
+ font-weight: 300;
+}
+.sidebarOption:hover > p{
+    display: inline;
+}
