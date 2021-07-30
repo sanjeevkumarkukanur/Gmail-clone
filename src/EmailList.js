@@ -4,7 +4,9 @@ import RedoIcon from '@material-ui/icons/Redo'
 import React from 'react'
 import './EmailList.css'
 import MoreVertIcon from '@material-ui/icons/MoreVert'
-import { ChevronLeft, ChevronRight, KeyboardHide, Settings } from '@material-ui/icons'
+// import InboxIcon from '@material-ui/icons/Inbox'
+import { ChevronLeft, ChevronRight, Inbox, KeyboardHide, LocalOffer, People, Settings } from '@material-ui/icons'
+import Section from './Section'
 
 function EmailList() {
     return (
@@ -36,11 +38,13 @@ function EmailList() {
                         <Settings />
                     </IconButton>
                 </div>
-                <div className="emailList__section">
-                    
-                </div>
+                
             </div>
-            
+            <div className="emailList__section">
+                    <Section Icon={Inbox} title='Primary' color="red" selected />
+                    <Section Icon={People} title='Social' color="#1A73E8"/>
+                    <Section Icon={LocalOffer} title='Promotions' color="green" />
+                </div>
         </div>
     )
 }

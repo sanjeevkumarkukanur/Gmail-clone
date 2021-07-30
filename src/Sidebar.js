@@ -18,7 +18,7 @@ function Sidebar() {
     return (
         <div className="sidebar">
             <Button startIcon={<AddIcon fontSize="large"/>}
-             className="siderbar__compose">
+             className="sidebar__compose">
                 Compose
             </Button>
             <SidebarOption Icon={InboxIcon} title="Inbox" number={56} 
