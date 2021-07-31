@@ -7,6 +7,7 @@ import MoreVertIcon from '@material-ui/icons/MoreVert'
 // import InboxIcon from '@material-ui/icons/Inbox'
 import { ChevronLeft, ChevronRight, Inbox, KeyboardHide, LocalOffer, People, Settings } from '@material-ui/icons'
 import Section from './Section'
+import EmailRow from './EmailRow'
 
 function EmailList() {
     return (
@@ -44,6 +45,20 @@ function EmailList() {
                     <Section Icon={Inbox} title='Primary' color="red" selected />
                     <Section Icon={People} title='Social' color="#1A73E8"/>
                     <Section Icon={LocalOffer} title='Promotions' color="green" />
+                </div>
+                <div className="emailList__list">
+                    <EmailRow 
+                    title="Tweter"
+                    subject="hey follow Streamer!!!"
+                    discription="this is text"
+                    time="10pm"
+                    />
+                    <EmailRow 
+                    title="Tweter"
+                    subject="hey follow Streamer!!!"
+                    discription="this is text"
+                    time="10pm"
+                    />
                 </div>
         </div>
     )
