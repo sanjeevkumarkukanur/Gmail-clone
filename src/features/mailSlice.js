@@ -9,14 +9,14 @@ export const mailSlice = createSlice({
     openSendMessage: (state) => {
       state.sendMessageIsOpen = true;
     },
-    openSendMessage: (state) => {
+    closeSendMessage: (state) => {
       state.sendMessageIsOpen = false;
     },
   }
 });
   
 
-export const { openSendMessage, sendMessageIsOpen } = mailSlice.actions;
+export const { openSendMessage, closeSendMessage } = mailSlice.actions;
 
 export const selectSendMessageIsOpen = (state) => state.mail.sendMessageIsOpen;
 
